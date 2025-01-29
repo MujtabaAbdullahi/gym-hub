@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Button, Box, Wrap, WrapItem, ButtonGroup, Stack } from "@chakra-ui/react";
 import './App.css'
 
 function App() {
@@ -8,28 +7,59 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Stack direction="column">
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          width="100%"
+          py={12}
+          bgImage="url('https://bit.ly/2Z4KKcF')"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          mb={2}
+        >
+          <ButtonGroup gap="4">
+            <Button colorScheme="whiteAlpha">WhiteAlpha</Button>
+            <Button colorScheme="blackAlpha">BlackAlpha</Button>
+          </ButtonGroup>
+        </Box>
+
+        <Wrap spacing={4}>
+          <WrapItem>
+            <Button colorScheme="gray">Gray</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="red">Red</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="orange">Orange</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="yellow">Yellow</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="green">Green</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="teal">Teal</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="blue">Blue</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="cyan">Cyan</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="purple">Purple</Button>
+          </WrapItem>
+          <WrapItem>
+            <Button colorScheme="pink">Pink</Button>
+          </WrapItem>
+        </Wrap>
+      </Stack>
     </>
-  )
+  );
 }
 
 export default App
