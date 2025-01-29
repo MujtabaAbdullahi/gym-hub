@@ -3,8 +3,6 @@ import { Button, Box, Wrap, WrapItem, ButtonGroup, Stack } from "@chakra-ui/reac
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Stack direction="column">
@@ -28,33 +26,6 @@ function App() {
         <Wrap spacing={4}>
           <WrapItem>
             <Button colorScheme="gray">Gray</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="red">Red</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="orange">Orange</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="yellow">Yellow</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="green">Green</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="teal">Teal</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="blue">Blue</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="cyan">Cyan</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="purple">Purple</Button>
-          </WrapItem>
-          <WrapItem>
-            <Button colorScheme="pink">Pink</Button>
           </WrapItem>
         </Wrap>
       </Stack>
